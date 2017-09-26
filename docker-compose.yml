@@ -1,0 +1,15 @@
+---
+version: '2.0'
+
+services:
+
+nginx:
+
+ container_name: nginxserver
+
+ build:
+    context: .
+    dockerfile: dockerfile
+  ports:
+    - 80:80
+  tty: true
